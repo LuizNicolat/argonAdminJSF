@@ -1,3 +1,3 @@
-## Painel Briefing Online
+## Argon Admin by Creative Tim
 
-### Painel do sistema gerenciador de briefing online.
+### Argon Admin adjusted to JSF with Primefaces, Maven.
