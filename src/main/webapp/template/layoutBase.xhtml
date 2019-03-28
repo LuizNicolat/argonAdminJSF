@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:body>
+	<h:head>
+	  <meta charset="utf-8"></meta>
+	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
+	  <meta name="description" content="Start your development with a Dashboard for Bootstrap 4."></meta>
+	  <meta name="author" content="Creative Tim"></meta>
+	  <title>Argon Dashboard</title>
+	  <!-- Fonts -->
+	  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"></link>
+	 
+	  <!-- Icons -->
+	  
+	  <link href="#{facesContext.externalContext.requestContextPath}/resources/ArgonAdmin/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet"></link>
+	  <link href="#{facesContext.externalContext.requestContextPath}/resources/ArgonAdmin/assets/vendor/nucleo/css/nucleo.css" rel="stylesheet"></link>
+	  <!-- <h:outputStylesheet name="ArgonAdmin/assets/vendor/nucleo/css/nucleo.css"/>
+	  <h:outputStylesheet name="ArgonAdmin/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"/> -->
+	  <!-- Argon CSS -->
+	  <h:outputStylesheet name="ArgonAdmin/assets/css/argon.css?v=1.0.0"/>
+	</h:head>	
+		<ui:include src="sidemenu.xhtml" />	
+			<!-- Main content -->
+	  <div class="main-content">
+		<ui:include src="topBar.xhtml" />	
+		<ui:include src="header.xhtml" />
+		<!-- Main content -->
+		<div class="container-fluid mt--7">
+			<ui:insert name="content" />	
+			<ui:include src="footer.xhtml" />
+		</div>
+	  </div>
+	  <!-- JQUERY -->
+	  <h:outputScript library="primefaces" name="jquery/jquery.js" target="head" />
+	  <h:outputScript library="primefaces" name="jquery/jquery-plugins.js" target="head" />
+	  <!-- Argon Scripts -->		
+	  <!-- Core -->
+	  <h:outputScript name="ArgonAdmin/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"/>
+	  <!-- Optional JS -->
+	  <h:outputScript name="ArgonAdmin/assets/vendor/chart.js/dist/Chart.min.js"/>
+	  <h:outputScript name="ArgonAdmin/assets/vendor/chart.js/dist/Chart.extension.js"/>
+	  <!-- Argon JS -->
+	  <h:outputScript name="ArgonAdmin/assets/js/argon.js?v=1.0.0"/>
+</h:body>
+</html>
